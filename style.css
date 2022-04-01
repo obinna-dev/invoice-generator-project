@@ -9,11 +9,11 @@ body    {
 .app-container    {
     margin: auto;
     max-width: 34.37rem;
-    background-color: #1F2937;
+    background-color: #371f1f;
 }
 
 .app-header {
-    background-color: #3A69D2;
+    background-color: #d23a3a;
     padding: 3.69rem 0px;
     margin-bottom: 0px;
 }
@@ -51,7 +51,7 @@ h1    {
 }
 
 .services-btn   {
-    background-color: #D1D4F4;
+    background-color: #f4d1d1;
     border: none;
     border-radius: 0.4rem;
     padding: 0.81rem 1.06rem;
@@ -90,7 +90,6 @@ h4  {
     font-family: Inter;
     font-size: 1.25rem;
     font-weight: 700;
-    /* line-height: 20px; */
     letter-spacing: 0em;
     text-align: left;
     color: #F5F5F5;
@@ -101,19 +100,17 @@ h4  {
     font-family: Inter;
     font-size: 1.5rem;
     font-weight: 500;
-    /* line-height: 20px; */
     letter-spacing: 0em;
     text-align: right;
     margin: 0px;
 }
 
 h4 > span {
-    color: #918E9B;
+    color: #9b8e8e;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
     font-size: 1.5rem;
-    /* line-height: 20px; */
     text-align: right;
     margin: 0px;
 }
@@ -160,7 +157,7 @@ h4 > span {
     gap: 0.625rem;
     width: 100%;
     padding: 0.625rem 0px;
-    background-color: #3A69D2;
+    background-color: #d23a3a;
     color: #fff;
     border: none;
     border-radius: 0.43rem;
