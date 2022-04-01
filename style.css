@@ -1,0 +1,172 @@
+html,
+body    {
+    background-color: #1C1C1C;
+    font-family: "inter";
+    font-size: 16px;
+    /* max-height: 100vh; */
+}
+
+.app-container    {
+    margin: auto;
+    max-width: 34.37rem;
+    background-color: #1F2937;
+}
+
+.app-header {
+    background-color: #3A69D2;
+    padding: 3.69rem 0px;
+    margin-bottom: 0px;
+}
+
+h1    {
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.app-header > p {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0.56rem 0px;
+    color: #fff;
+}
+
+.app-body-container {
+    padding: 0 2.43rem 3.06rem 2.43rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.56rem;
+}
+
+.services-btn   {
+    background-color: #D1D4F4;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.81rem 1.06rem;
+}
+
+.services-btn:active    {
+    border: 0.125rem solid #FFFFFF;
+}
+
+.task-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 2.56rem;
+}
+
+h5  {
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #D5D4D8;
+}
+
+.invoiced-item-container    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.125rem;
+    padding: 0px;
+}
+
+h4  {
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 700;
+    /* line-height: 20px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5F5F5;
+    margin: 0px;
+}
+
+#item-cost  {
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* line-height: 20px; */
+    letter-spacing: 0em;
+    text-align: right;
+    margin: 0px;
+}
+
+h4 > span {
+    color: #918E9B;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* line-height: 20px; */
+    text-align: right;
+    margin: 0px;
+}
+
+.seperating-line    {
+    border-bottom: 0.0625rem solid #C3C6DB;
+}
+
+.notes-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.total-sum-container    {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.total-sum-container > h4 > span    {
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.93rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#total-sum  {
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+#send-invoice-btn   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.625rem 0px;
+    background-color: #3A69D2;
+    color: #fff;
+    border: none;
+    border-radius: 0.43rem;
+    margin-top: 3.125rem;
+}
+
+button > img  {
+    width: 1.875rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Invoice Generator Project</title>
+</head>
+<body>
+    <div class="outer-app-container">
+        <div class="app-container">
+            <div class="app-header">
+                <h1>Invoice Creator</h1>
+                <p>Thanks for choosing GoodCorp, LLC!</p>
+            </div>
+            <div class="app-body-container">
+                <div class="services-container">
+                    <button class="services-btn">Wash Car: $10</button>
+                    <button class="services-btn">Mow Lawn: $20</button>
+                    <button class="services-btn">Pull Weeds: $30</button>
+                </div>
+                <div class="task-total">
+                    <h5>TASK</h5>
+                    <h5>TOTAL</h5>
+                </div>
+                <div class="invoiced-item-container">
+                    <h4>Wash Car</h4>
+                    <h4 id="item-cost"><span>$</span>10</h4>
+                </div>
+                <div class="invoiced-item-container">
+                    <h4>Mow Lawn</h4>
+                    <h4 id="item-cost"><span>$</span>20</h4>
+                </div>
+                <div class="invoiced-item-container">
+                    <h4>Pull Weeds</h4>
+                    <h4 id="item-cost"><span>$</span>30</h4>
+                </div>
+                <div class="seperating-line"></div>
+                <div class="notes-total">
+                    <h5>NOTES</h5>
+                    <h5>TOTAL AMOUNT</h5>
+                </div>
+                <div class="total-sum-container">
+                    <h4><span>We accept cash, credit card, or PayPal</span></h4>
+                    <h4 id="total-sum">$60</h4>
+                </div>
+                <button id="send-invoice-btn"><img  src="Mail icon.png" alt="send invoice">Send Invoice</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
