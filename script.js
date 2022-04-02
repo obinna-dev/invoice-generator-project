@@ -1,18 +1,22 @@
 // let services = ["washcar", "mowlawn", "pullweeds"]
 
-let services = []
-let servicesPrice = []
+// NOTE TO SELF - CONST ALL LETS lol 
+
+const services = []
+const servicesPrice = []
 const washCarBtn = document.getElementById("wash-car-btn")
-let mowLawnBtn = document.getElementById("mow-lawn-btn")
-let pullWeedsBtn = document.getElementById("pull-weeds-btn")
-let washService = "Wash Car"
-let mowService = "Mow Lawn"
-let pullWeedService = "Pull Weeds"
-let washServicePrice = 10
-let mowServicePrice = 20
-let pullWeedServicePrice = 30
-let invoicedItem = document.getElementById("invoiced-items")
-let priceEl = document.getElementById("price-el")
+const mowLawnBtn = document.getElementById("mow-lawn-btn")
+const pullWeedsBtn = document.getElementById("pull-weeds-btn")
+const washService = "Wash Car"
+const mowService = "Mow Lawn"
+const pullWeedService = "Pull Weeds"
+const washServicePrice = 10
+const mowServicePrice = 20
+const pullWeedServicePrice = 30
+const invoicedItem = document.getElementById("invoiced-items")
+const priceEl = document.getElementById("price-el")
+const totalSum = document.getElementById("total-sum")
+
 
 
 
@@ -37,7 +41,7 @@ pullWeedsBtn.addEventListener("click", function()   {
     renderArr()
 })
 
-// // function to display data from array 
+// // function to display data from array
 function renderArr()    {
     invoicedItem.innerHTML = ""
     for (let i = 0; i < services.length; i++)   {
@@ -47,6 +51,8 @@ function renderArr()    {
     priceEl.innerHTML = ""
     for (let i = 0; i < servicesPrice.length; i++) {
         console.log(servicesPrice[i])
-        priceEl.innerHTML += `${servicesPrice[i]}<br/>`
+        priceEl.innerHTML += `<span id="currency">$</span>${servicesPrice[i]}<br/>`
+        const sumPrices = servicesPrice.reduce((a, b) => a + b, 0)
+        totalSum.innerHTML = `$${sumPrices}`  
     }
 }
