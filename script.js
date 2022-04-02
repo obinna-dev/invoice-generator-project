@@ -1,7 +1,3 @@
-// let services = ["washcar", "mowlawn", "pullweeds"]
-
-// NOTE TO SELF - CONST ALL LETS lol 
-
 const services = []
 const servicesPrice = []
 const washCarBtn = document.getElementById("wash-car-btn")
@@ -16,15 +12,17 @@ const pullWeedServicePrice = 30
 const invoicedItem = document.getElementById("invoiced-items")
 const priceEl = document.getElementById("price-el")
 const totalSum = document.getElementById("total-sum")
-
-
-
+const sendInvoiceBtn = document.getElementById("send-invoice-btn")
+washCarBtn.disabled = false
+mowLawnBtn.disabled = false
+pullWeedsBtn.disabled = false
 
 washCarBtn.addEventListener("click", function() {
     services.push(washService)
     servicesPrice.push(washServicePrice)
     console.log(services)
     renderArr()
+    washCarBtn.disabled = true
 })
 
 mowLawnBtn.addEventListener("click", function()   {
@@ -32,6 +30,7 @@ mowLawnBtn.addEventListener("click", function()   {
     servicesPrice.push(mowServicePrice)
     console.log(services)
     renderArr()
+    mowLawnBtn.disabled = true
 })
 
 pullWeedsBtn.addEventListener("click", function()   {
@@ -39,9 +38,19 @@ pullWeedsBtn.addEventListener("click", function()   {
     servicesPrice.push(pullWeedServicePrice)
     console.log(services) 
     renderArr()
+    pullWeedsBtn.disabled = true
 })
 
-// // function to display data from array
+sendInvoiceBtn.addEventListener("click", function() {
+    washCarBtn.disabled = false
+    mowLawnBtn.disabled = false
+    pullWeedsBtn.disabled = false
+    services.length = 0
+    servicesPrice.length = 0
+    !renderArr()
+})
+
+// function to display data from arrays
 function renderArr()    {
     invoicedItem.innerHTML = ""
     for (let i = 0; i < services.length; i++)   {
