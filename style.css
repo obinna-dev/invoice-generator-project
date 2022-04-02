@@ -3,7 +3,6 @@ body    {
     background-color: #1C1C1C;
     font-family: "inter";
     font-size: 16px;
-    /* max-height: 100vh; */
 }
 
 .app-container    {
@@ -88,7 +87,6 @@ h5  {
     align-items: center;
     margin-bottom: 1.125rem;
     padding: 0px;
-
 }
 
 h4  {
@@ -110,6 +108,24 @@ h4  {
     font-size: 1.5rem;
     text-align: right;
     margin: 0px;
+}
+
+#invoice-remover-container  {
+    flex-grow: 1;
+    margin-left: 2rem;   
+}
+
+#remove-btn-el,
+#remove-btn-el-lawn,
+#remove-btn-el-weed   {
+    font-family: Inter;
+    font-size: 0.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    color: #fff;
 }
 
 #price-el {
