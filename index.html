@@ -19,25 +19,25 @@
             </div>
             <div class="app-body-container">
                 <div class="services-container">
-                    <button class="services-btn">Wash Car: $10</button>
-                    <button class="services-btn">Mow Lawn: $20</button>
-                    <button class="services-btn">Pull Weeds: $30</button>
+                    <button class="services-btn" id="wash-car-btn">Wash Car: $10</button>
+                    <button class="services-btn" id="mow-lawn-btn">Mow Lawn: $20</button>
+                    <button class="services-btn" id="pull-weeds-btn">Pull Weeds: $30</button>
                 </div>
                 <div class="task-total">
                     <h5>TASK</h5>
                     <h5>TOTAL</h5>
                 </div>
                 <div class="invoiced-item-container">
-                    <h4>Wash Car</h4>
-                    <h4 id="item-cost"><span>$</span>10</h4>
+                    <h4 id="invoiced-items"></h4>
+                    <h4 id="item-cost">$<span id="price-el">12</span></h4>
                 </div>
                 <div class="invoiced-item-container">
                     <h4>Mow Lawn</h4>
-                    <h4 id="item-cost"><span>$</span>20</h4>
+                    <h4 id="item-cost">$<span>20</span></h4>
                 </div>
                 <div class="invoiced-item-container">
                     <h4>Pull Weeds</h4>
-                    <h4 id="item-cost"><span>$</span>30</h4>
+                    <h4 id="item-cost">$<span>30</span></h4>
                 </div>
                 <div class="seperating-line"></div>
                 <div class="notes-total">
@@ -52,6 +52,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
