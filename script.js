@@ -24,12 +24,10 @@ pullWeedsBtn.disabled = false
 function renderArr()    {
     invoicedItem.innerHTML = ""
     for (let i = 0; i < services.length; i++)   {
-        // console.log(services[i])
         invoicedItem.innerHTML += `${services[i]}<br/>`
     }
     priceEl.innerHTML = ""
     for (let i = 0; i < servicesPrice.length; i++) {
-        // console.log(servicesPrice[i])
         priceEl.innerHTML += `<span id="currency">$</span>${servicesPrice[i]}<br/>`
         // this one sums up the items in the prices array 
         const sumPrices = servicesPrice.reduce((a, b) => a + b, 0)
